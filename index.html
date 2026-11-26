@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Виват, сольфеджио! — Открытый городской конкурс по сольфеджио</title>
+  <meta name="description" content="Открытый городской конкурс по сольфеджио «Виват, сольфеджио!» — 27 марта 2027 года, г. Оренбург, МБУДО ДШИ № 6. Заявки до 1 марта. Пять разделов, четыре группы участников.">
+  <meta name="theme-color" content="#FAF6EE">
+
+  <!-- Теги для красивого превью ссылки в соцсетях и мессенджерах -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Виват, сольфеджио!">
+  <meta property="og:title" content="Виват, сольфеджио! — Открытый городской конкурс по сольфеджио">
+  <meta property="og:description" content="27 марта 2027 года · г. Оренбург · МБУДО ДШИ № 6. Заявки принимаются до 1 марта.">
+  <!-- МЕНЯТЬ ЗДЕСЬ: og:image и og:url — когда сайт получит адрес, раскомментируйте строки ниже,
+       укажите полный адрес сайта и картинку-превью 1200×630 (например, баннер конкурса) -->
+  <!-- <meta property="og:url" content="https://АДРЕС-САЙТА/"> -->
+  <!-- <meta property="og:image" content="https://АДРЕС-САЙТА/img/preview.png"> -->
+
+  <!-- Фавикон: нотка на тёмно-синем кружке (встроенный SVG, внешних файлов нет) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ccircle%20cx='50'%20cy='50'%20r='48'%20fill='%231E2A38'/%3E%3Ctext%20x='50'%20y='73'%20font-size='62'%20text-anchor='middle'%20fill='%23E8B04B'%3E%E2%99%AA%3C/text%3E%3C/svg%3E">
+
+  <!-- Шрифты Google Fonts (при недоступности сработают запасные шрифты из style.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ======================= ШАПКА ======================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html">
+        <!-- МЕНЯТЬ ЗДЕСЬ: логотип — заменить заглушку ниже на <img src="img/logo.png" alt="Логотип конкурса" width="50" height="50"> -->
+        <span class="brand__logo" aria-hidden="true">Л</span>
+        <span class="brand__name">Виват, сольфеджио!</span>
+      </a>
+
+      <!-- Меню на чистом CSS: чекбокс управляет показом навигации -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-controls="site-nav">
+      <label for="nav-toggle" class="burger">
+        <span class="sr-only">Меню</span>
+        <span class="burger__box" aria-hidden="true">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </span>
+      </label>
+
+      <nav id="site-nav" class="site-nav" aria-label="Основное меню">
+        <ul class="nav-list">
+          <li><a href="o-konkurse.html">О конкурсе</a></li>
+          <li><a href="polozhenie.html">Положение</a></li>
+          <li><a href="uchastnikam.html">Участникам</a></li>
+          <li><a href="zhuri.html">Жюри</a></li>
+          <li><a href="itogi.html">Итоги</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= ПЕРВЫЙ ЭКРАН ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="hero__note hero__note--1" aria-hidden="true">♪</span>
+      <span class="hero__note hero__note--2" aria-hidden="true">♫</span>
+      <span class="hero__note hero__note--3" aria-hidden="true">♬</span>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Виват, сольфеджио!</h1>
+          <p class="hero__subtitle">Открытый городской конкурс по сольфеджио</p>
+          <p class="hero__meta">27 марта 2027 года <span class="hero__dot" aria-hidden="true">·</span> г. Оренбург <span class="hero__dot" aria-hidden="true">·</span> МБУДО ДШИ № 6</p>
+
+          <div class="hero__actions">
+            <!-- МЕНЯТЬ ЗДЕСЬ: ссылка на заявку — заменить # на ссылку Яндекс Формы -->
+            <a class="btn btn--accent" href="#">Подать заявку</a>
+            <a class="btn btn--outline" href="polozhenie.html">Положение конкурса</a>
+          </div>
+        </div>
+
+        <!-- Декоративная «октавная» шкала: 8 секторов фирменной палитры -->
+        <div class="hero__art" aria-hidden="true">
+          <svg class="octave-wheel" viewBox="0 0 200 200" focusable="false">
+            <g class="octave-wheel__ring">
+              <path class="wheel-seg wheel-seg--1" d="M100,10 A90,90 0 0 1 163.64,36.36 L138.89,61.11 A55,55 0 0 0 100,45 Z"/>
+              <path class="wheel-seg wheel-seg--2" d="M163.64,36.36 A90,90 0 0 1 190,100 L155,100 A55,55 0 0 0 138.89,61.11 Z"/>
+              <path class="wheel-seg wheel-seg--3" d="M190,100 A90,90 0 0 1 163.64,163.64 L138.89,138.89 A55,55 0 0 0 155,100 Z"/>
+              <path class="wheel-seg wheel-seg--4" d="M163.64,163.64 A90,90 0 0 1 100,190 L100,155 A55,55 0 0 0 138.89,138.89 Z"/>
+              <path class="wheel-seg wheel-seg--5" d="M100,190 A90,90 0 0 1 36.36,163.64 L61.11,138.89 A55,55 0 0 0 100,155 Z"/>
+              <path class="wheel-seg wheel-seg--6" d="M36.36,163.64 A90,90 0 0 1 10,100 L45,100 A55,55 0 0 0 61.11,138.89 Z"/>
+              <path class="wheel-seg wheel-seg--7" d="M10,100 A90,90 0 0 1 36.36,36.36 L61.11,61.11 A55,55 0 0 0 45,100 Z"/>
+              <path class="wheel-seg wheel-seg--8" d="M36.36,36.36 A90,90 0 0 1 100,10 L100,45 A55,55 0 0 0 61.11,61.11 Z"/>
+            </g>
+            <circle class="wheel-hub" cx="100" cy="100" r="42"/>
+            <text class="wheel-note" x="100" y="116">♪</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= КАК ПРОХОДИТ КОНКУРС ======================= -->
+    <section class="section" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <h2 class="section-title" id="steps-title">Как проходит конкурс</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3 class="step__title">Заявка до 1 марта</h3>
+            <p class="step__text">На почту оргкомитета <a href="mailto:iskusstvv6@mail.ru">iskusstvv6@mail.ru</a> с пометкой «Конкурс». Форматы: PDF с подписью и печатью + Word.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3 class="step__title">Целевой взнос — 500 ₽</h3>
+            <p class="step__text">Копия квитанции прилагается к заявке. Участие каждого конкурсанта оплачивается отдельно.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3 class="step__title">Конкурсный день — 27 марта 2027</h3>
+            <p class="step__text">Очно, в один тур, на базе МБУДО ДШИ № 6 г. Оренбурга.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">4</span>
+            <h3 class="step__title">Итоги</h3>
+            <p class="step__text">Оглашение в день конкурса. Публикация результатов — 2 апреля 2027 года.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= ПЯТЬ РАЗДЕЛОВ ======================= -->
+    <section class="section section--tinted" id="sections" aria-labelledby="sections-title">
+      <div class="container">
+        <h2 class="section-title" id="sections-title">Пять разделов конкурса</h2>
+
+        <ul class="sections-grid">
+          <li class="section-card">
+            <span class="section-card__icon icon--1" aria-hidden="true">✎</span>
+            <h3 class="section-card__title">Диктант</h3>
+          </li>
+          <li class="section-card">
+            <span class="section-card__icon icon--2" aria-hidden="true">♬</span>
+            <h3 class="section-card__title">Слуховой анализ (письменно)</h3>
+          </li>
+          <li class="section-card">
+            <span class="section-card__icon icon--3" aria-hidden="true">♫</span>
+            <h3 class="section-card__title">Чтение с листа</h3>
+          </li>
+          <li class="section-card">
+            <span class="section-card__icon icon--4" aria-hidden="true">♪</span>
+            <h3 class="section-card__title">Пение упражнений</h3>
+          </li>
+          <li class="section-card">
+            <span class="section-card__icon icon--5" aria-hidden="true">♩</span>
+            <h3 class="section-card__title">Игра упражнений на фортепиано</h3>
+          </li>
+        </ul>
+
+        <p class="section-note">Задания соответствуют программным требованиям предмета „Сольфеджио“.</p>
+      </div>
+    </section>
+
+    <!-- ======================= ГРУППЫ УЧАСТНИКОВ ======================= -->
+    <section class="section" id="groups" aria-labelledby="groups-title">
+      <div class="container">
+        <h2 class="section-title" id="groups-title">Группы участников</h2>
+
+        <ul class="groups-grid">
+          <li class="group-card">
+            <span class="group-card__badge badge--1" aria-hidden="true">A</span>
+            <h3 class="group-card__title">Группа A</h3>
+            <p class="group-card__class">4 класс</p>
+            <p class="group-card__term">8-летний срок обучения</p>
+          </li>
+          <li class="group-card">
+            <span class="group-card__badge badge--2" aria-hidden="true">B</span>
+            <h3 class="group-card__title">Группа B</h3>
+            <p class="group-card__class">5 класс</p>
+            <p class="group-card__term">8-летний срок обучения</p>
+          </li>
+          <li class="group-card">
+            <span class="group-card__badge badge--3" aria-hidden="true">C</span>
+            <h3 class="group-card__title">Группа C</h3>
+            <p class="group-card__class">6 класс</p>
+            <p class="group-card__term">8-летний срок обучения</p>
+          </li>
+          <li class="group-card">
+            <span class="group-card__badge badge--4" aria-hidden="true">D</span>
+            <h3 class="group-card__title">Группа D</h3>
+            <p class="group-card__class">7–9 классы</p>
+            <p class="group-card__term">8-летний срок обучения</p>
+          </li>
+        </ul>
+
+        <p class="section-note">От одного учреждения — не более пяти участников.</p>
+      </div>
+    </section>
+
+    <!-- ======================= НОВОСТИ ======================= -->
+    <section class="section section--tinted" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <h2 class="section-title" id="news-title">Новости</h2>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <!-- МЕНЯТЬ ЗДЕСЬ: дата новости -->
+            <p class="news-card__date">дд.мм.гггг</p>
+            <h3 class="news-card__title">Приём заявок открыт</h3>
+            <p class="news-card__text">Заявки принимаются до 1 марта 2027 года на почту оргкомитета с пометкой «Конкурс».</p>
+          </article>
+          <article class="news-card">
+            <!-- МЕНЯТЬ ЗДЕСЬ: дата новости о жюри -->
+            <p class="news-card__date">Скоро</p>
+            <h3 class="news-card__title">Состав жюри</h3>
+            <p class="news-card__text">Скоро.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ИТОГИ ПРОШЛОГО КОНКУРСА ======================= -->
+    <section class="section" id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="results-panel">
+          <h2 class="section-title" id="results-title">Итоги прошлого конкурса</h2>
+          <!-- МЕНЯТЬ ЗДЕСЬ: текст об итогах — после публикации результатов -->
+          <p class="results-panel__text">Список лауреатов и дипломантов появится после подведения итогов.</p>
+          <a class="btn btn--outline" href="itogi.html">Смотреть итоги</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= ПОДВАЛ / КОНТАКТЫ ======================= -->
+  <footer class="site-footer" id="contacts">
+    <div class="container footer-grid">
+
+      <div class="footer-col">
+        <h2 class="footer-title">МБУДО «Детская школа искусств № 6» г. Оренбурга</h2>
+        <address class="footer-text">460038, г. Оренбург,<br>ул. Конституции СССР, 23</address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Контакты</h2>
+        <ul class="footer-list">
+          <li><a href="tel:+73532368976">8 (3532) 36-89-76</a></li>
+          <li><a href="tel:+73532368966">8 (3532) 36-89-66</a></li>
+          <li><a href="mailto:iskusstvv6@mail.ru">iskusstvv6@mail.ru</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Заявки</h2>
+        <p class="footer-text">Заявки принимаются на почту оргкомитета с пометкой <strong>„Конкурс“</strong>.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2027 МБУДО ДШИ № 6, г. Оренбург</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
